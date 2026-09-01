@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindowController" fx:id="mainBorderPane">
+    <top>
+        <MenuBar>
+            <Menu text="_File">
+                <MenuItem text="_Reload graph" onAction="#reloadGraphAction" accelerator="ctrl+r" />
+                <SeparatorMenuItem />
+                <MenuItem text="_Export history to XML" onAction="#exportHistoryToXMLAction" accelerator="ctrl+x" />
+                <SeparatorMenuItem />
+                <MenuItem text="_Exit" onAction="#closeAppAction" accelerator="ctrl+e" />
+            </Menu>
+            <Menu text="_Functions">
+                <MenuItem text="_Add function" onAction="#addFunctionAction" accelerator="ctrl+f" />
+                <SeparatorMenuItem />
+                <MenuItem text="_History" onAction="#showHistoryAction" accelerator="ctrl+h" />
+                <SeparatorMenuItem />
+                <MenuItem text="_Delete functions" onAction="#deleteFunctionsAction" accelerator="ctrl+d"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <left>
+        <ListView fx:id="functionsView"
+                  onMouseClicked="#functionsViewMouseClickedAction"
+                  onKeyPressed="#functionsViewKeyPressedAction" />
+    </left>
+
+    <bottom>
+        <Text fx:id="txtStatus" />
+    </bottom>
+</BorderPane>

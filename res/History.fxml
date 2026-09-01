@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="HistoryController">
+
+    <center>
+        <ListView fx:id="functionsHistoryView"
+                  onMouseClicked="#functionsHistoryViewMouseClickedAction"
+                  onKeyPressed="#functionsHistoryViewKeyPressedAction" />
+    </center>
+
+</BorderPane>

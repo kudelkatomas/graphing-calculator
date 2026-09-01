@@ -1,0 +1,15 @@
+# Compiled binaries
+out/
+*.class
+
+# Logs & Database
+*.log
+derby.log
+/graphing_calculator_db/
+
+# IDE files
+.idea/
+*.iml
+
+### OS Metadata ###
+Thumbs.db
