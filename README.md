@@ -1,4 +1,4 @@
-# Graphing Calculator (2024)
+# Graphing Calculator
 
 A 2D graphing calculator built with **Java** and **JavaFX**.
 
